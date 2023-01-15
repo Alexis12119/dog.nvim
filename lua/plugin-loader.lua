@@ -11,7 +11,6 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-
 local opts = {
   git = {
     -- defaults for the `Lazy log` command

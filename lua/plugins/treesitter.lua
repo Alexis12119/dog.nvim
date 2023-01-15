@@ -34,7 +34,7 @@ return { -- Highlight, edit, and navigate code
       textobjects = {
         select = {
           enable = true,
-          lookahead = true, -- Automatically jump forward to textobj, similar to targets.vim
+          lookahaead = true, -- Automatically jump forward to textobj, similar to targets.vim
           keymaps = {
             -- You can use the capture groups defined in textobjects.scm
             ["aa"] = "@parameter.outer",

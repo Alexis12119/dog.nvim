@@ -8,4 +8,3 @@ vim.keymap.set("n", "<leader>c", "<cmd>bd!<cr>")
 vim.keymap.set("n", "<leader>/", "<cmd>noh<cr>")
 vim.keymap.set("i", "jk", "<esc>")
 vim.keymap.set("n", "<leader>n", "<cmd>next<cr>")
-
