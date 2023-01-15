@@ -9,7 +9,6 @@ return { -- Highlight, edit, and navigate code
   dependencies = {
     { -- Additional text objects via treesitter
       "nvim-treesitter/nvim-treesitter-textobjects",
-      after = "nvim-treesitter",
     },
   },
   config = function()
