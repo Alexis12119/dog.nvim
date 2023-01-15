@@ -108,57 +108,6 @@ local opts = {
     },
   },
 }
-local plugins = {
-
-  { -- LSP Configuration & Plugins
-    "neovim/nvim-lspconfig",
-    dependencies = {
-      -- Automatically install LSPs to stdpath for neovim
-      "williamboman/mason.nvim",
-      "williamboman/mason-lspconfig.nvim",
-
-      -- Useful status updates for LSP
-      "j-hui/fidget.nvim",
-
-      -- Additional lua configuration, makes nvim stuff amazing
-      "folke/neodev.nvim",
-    },
-  },
-
-  
-  -- Git related plugins
-  -- DPK
-  -- {'tpope/vim-fugitive'},
-  -- {'tpope/vim-rhubarb'},
-  -- {'lewis6991/gitsigns.nvim'},
-
-  {
-    "navarasu/onedark.nvim",
-    config = function()
-      vim.cmd [[colorscheme onedark]]
-    end,
-  }, -- Theme inspired by Atom
-  { "nvim-lualine/lualine.nvim" }, -- Fancier statusline
-  -- {'lukas-reineke/indent-blankline.nvim'}, -- Add indentation guides even on blank lines
-  -- {'numToStr/Comment.nvim'}, -- "gc" to comment visual regions/lines
-  { "tpope/vim-sleuth" }, -- Detect tabstop and shiftwidth automatically
-
-  -- Fuzzy Finder (files, lsp, etc)
-  {
-    "nvim-telescope/telescope.nvim",
-    branch = "0.1.x",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      {
-        "nvim-telescope/telescope-fzf-native.nvim",
-        build = "make",
-        cond = vim.fn.executable "make" == 1,
-      },
-    },
-  },
-
-  -- Fuzzy Finder Algorithm which requires local dependencies to be built. Only load if `make` is available
-}
 
 local status_ok, lazy = pcall(require, "lazy")
 if not status_ok then

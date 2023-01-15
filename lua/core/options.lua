@@ -33,6 +33,7 @@ vim.o.termguicolors = true
 vim.o.completeopt = "menuone,noselect"
 
 --vim.opt.listchars = 'tab:▏ ,trail:☐'
+vim.opt.list = true
 vim.opt.listchars = { tab = "▏ ", trail = "☐" }
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
