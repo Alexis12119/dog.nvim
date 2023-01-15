@@ -4,7 +4,7 @@ return { -- Highlight, edit, and navigate code
 
   "nvim-treesitter/nvim-treesitter",
   build = function()
-    pcall(require("nvim-treesitter.install").update({ with_sync = true }))
+    pcall(require("nvim-treesitter.install").update { with_sync = true })
   end,
   dependencies = {
     { -- Additional text objects via treesitter
@@ -16,7 +16,7 @@ return { -- Highlight, edit, and navigate code
     if not status_ok then
       return
     end
-    configs.setup({
+    configs.setup {
       -- Add languages to be installed here that you want installed for treesitter
       ensure_installed = { "c", "cpp", "go", "lua", "python", "rust", "typescript", "help" },
 
@@ -75,6 +75,6 @@ return { -- Highlight, edit, and navigate code
           },
         },
       },
-    })
+    }
   end,
 }

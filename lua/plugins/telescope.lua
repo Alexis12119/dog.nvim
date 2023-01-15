@@ -4,7 +4,7 @@ return {
   config = function()
     -- [[ Configure Telescope ]]
     -- See `:help telescope` and `:help telescope.setup()`
-    require("telescope").setup({
+    require("telescope").setup {
       defaults = {
         mappings = {
           i = {
@@ -13,7 +13,7 @@ return {
           },
         },
       },
-    })
+    }
 
     -- Enable telescope fzf native, if installed
     pcall(require("telescope").load_extension, "fzf")
@@ -24,7 +24,7 @@ return {
       "nvim-telescope/telescope-fzf-native.nvim",
       build = "make",
       cond = function()
-        return vim.fn.executable("make") == 1
+        return vim.fn.executable "make" == 1
       end,
     },
   },
